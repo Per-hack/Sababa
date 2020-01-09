@@ -1,17 +1,17 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
-import Navbar from './components/client/navbar';
-import home from './components/client/home';
-import cover from './components/client/cover';
-import Products from './components/client/products';
-import About from './components/client/about';
-import Login from './components/client/login';
-import Signup from './components/client/signup';
-import Mobilephones from './components/client/mobilephones';
-import Clothes from './components/client/clothes';
-import Laptops from './components/client/laptops';
-import Contact from './components/client/Contact';
+import Navbar from './components/client/Navbar/navbar';
+import home from './components/client/Home/home';
+import cover from './components/client/Cover/cover';
+import Products from './components/client/Shop/products';
+import About from './components/client/About/about';
+import Login from './components/client/Login/login';
+import Signup from './components/client/Signup/signup';
+import Mobilephones from './components/client/Shop/mobilephones';
+import Clothes from './components/client/Shop/clothes';
+import Laptops from './components/client/Shop/laptops';
+import Contact from './components/client/Contact/Contact';
 
 
 function App() {
