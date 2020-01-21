@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+
 
 function Login() {
     return (
@@ -29,8 +32,19 @@ function Login() {
             <button>Log In</button> 
             <a href="#"><small>Forgot Password?</small></a>
           </a>     
-     
+          <p className="snup">
+            Don't have an account?<Link to="/signup"> Signup</Link>
+          </p>
+          <div className="loginwith d-flex p-2">
+            <span>
+              <img src="/" alt="google" align="left" />
+            </span>
+            {"  "}
+            <p>
+              <strong>Sign in with google</strong>
+            </p>
           </div>
+    </div>
     </div>
     )
 }

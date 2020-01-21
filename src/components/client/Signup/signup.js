@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Signup extends Component {
   render() {
@@ -6,16 +7,7 @@ class Signup extends Component {
       <div className="login-wrapper">
         <div className="form-wrapper">
           <h1>Create Account</h1>
-          <form>
-            <div className="role-dropdown">
-              <label>Who do you want to be?</label>
-              <select name="role">
-                <option value="buyer/customer">Customer</option>
-                <option value="seller">Seller</option>
-                <option value="courier">Courier</option>
-              </select>
-            </div>
-
+        
             <div className="firstname">
               <label htmlFor="firstname">First Name</label>
               <input
@@ -69,12 +61,27 @@ class Signup extends Component {
                      type="number"
                      name="passcode"/>
 
+
+<form>
+            <div className="role-dropdown">
+              <label>Who do you want to be?</label>
+              <select name="role">
+                <option value="buyer/customer">Customer</option>
+                <option value="seller">Seller</option>
+                <option value="courier">Courier</option>
+              </select>
+            </div>
+            </form>
             </div> */}
             <div className="createAccount">
               <button type="submit">Create Account</button>
+              <p className="snup">
+            <input type="checkbox" /> By checking this box you are agreeing to
+            our <Link to="/Terms and conditions.">Terms and conditions.</Link>{" "}
+          </p>
               <small>Already Have an Account?</small>
+              <button>Login</button>
             </div>
-          </form>
         </div>
       </div>
     );

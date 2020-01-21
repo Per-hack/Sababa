@@ -1,0 +1,108 @@
+import React from 'react';
+import { UncontrolledCarousel } from "reactstrap";
+
+
+const items = [
+  {
+    src:
+      "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    altText: "Slide 1",
+    caption:
+      "When you’re comfortable and content with who you are, the voices of others who try and define, control or direct you are not important.",
+    header: "Rachel Robins",
+    key: "1"
+  },
+  {
+    src:
+      "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    altText: "Slide 2",
+    caption:
+      "  If we are always pushing away from feelings that we condemn as wrong, painful, or ugly, we are also pushing away from the very energy that can bring us incredible joy and ecstasy.",
+    header: "Shaeri Richards",
+    key: "2"
+  },
+
+  {
+    src:
+      "https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    altText: "Slide 3",
+    caption: "There is hope, even when your brain tells you there isn’t.",
+    header: "John Green",
+    key: "3"
+  },
+
+  {
+    src:
+      "https://images.pexels.com/photos/1788852/pexels-photo-1788852.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    altText: "Slide 4",
+    caption:
+      "And if today all you did was hold yourself together, I’m proud of you.",
+    header: "Healthy place.com",
+    key: "4"
+  },
+
+  {
+    src:
+      "https://images.pexels.com/photos/750073/pexels-photo-750073.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    altText: "Slide 5",
+    caption:
+      "Give yourself another day, another chance. You will find your courage eventually. Don’t give up on yourself just yet.",
+    header: "Healthy place.com",
+    key: "5"
+  }
+];
+
+const Home = props => {
+  return (
+    <div>
+      <UncontrolledCarousel
+        className="homeCarousel"
+        style={{ height: "40vh" }}
+        items={items}
+      />
+<div className="row">
+        <a
+          href="/food"
+          className="col-md-3 categories category_left tint"
+          style={{
+            background:
+              "url(https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+          }}
+        >
+          <div align="center">
+            <h3>Food</h3>
+          </div>
+        </a>
+        <a
+          href="/drink"
+          className="col-md-3 categories tint"
+          style={{
+            background:
+              "url(https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+          }}
+        >
+          <div align="center">
+            <h3>Drinks</h3>
+          </div>
+        </a>
+        <a
+          href="/others"
+          className="col-md-3 categories tint"
+          style={{
+            background:
+              "url(https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+          }}
+        >
+          <div align="center">
+            <h3>Others</h3>
+          </div>
+        </a>
+      </div>
+    </div> 
+  );
+}
+
+export default Home;
+
+
+

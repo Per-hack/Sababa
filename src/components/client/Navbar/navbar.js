@@ -24,9 +24,9 @@ function Navbar () {
               About Us
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/products">
-              Products
+           <li className="nav-item">
+            <a className="nav-link" href="/shop">
+              Shop
             </a>
           </li>
           <li className="nav-item">
