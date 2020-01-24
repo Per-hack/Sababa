@@ -3,14 +3,7 @@ import React from 'react';
 function Contact() {
     return (
         <div>
-        <div className="split contactright">
-          <h5>Address</h5>
-          <h6>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</h6>
-          <h5>Let's talk</h5>
-          <h6>+254727000000</h6>
-          <h5>General Support</h5>
-          <h6>contact@example.com</h6>
-        </div>
+       
             <div className="login-wrapper">
                 <form className="form-wrapper">
                     <h1>Get In Touch With Us</h1>

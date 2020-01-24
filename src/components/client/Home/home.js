@@ -1,69 +1,136 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
-import {
-  Button,
-  CardImg,
-  CardTitle,
-  CardText,
-  CardColumns,
-  CardSubtitle,
-  CardBody,
-  Navbar
-} from "reactstrap";
 import Footer from "../Footer/footer";
 import Logo from "../../../assets/img/saaba.png";
 import { Input, Tooltip, Icon } from "antd";
+import { makeStyles } from '@material-ui/core/styles';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
+import IconButton from '@material-ui/core/IconButton';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+
+import kfc from '../../../assets/img/kfc.jpeg'
+import javahouse from '../../../assets/img/javahouse.jpeg'
+import lb from '../../../assets/img/lb.jpeg'
+import gm from '../../../assets/img/gm.jpeg'
+
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  gridList: {
+    flexWrap: 'nowrap',
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: 'translateZ(0)',
+  },
+  title: {
+    color: theme.palette.primary.light,
+  },
+  titleBar: {
+    background:
+      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+  },
+}));
+
+const tileData = [
+    {
+      img: kfc,
+       title: 'KFC',
+       author: 'author',
+     },{
+      img: javahouse,
+      title: 'Java House',
+      author: 'author',
+     },{
+      img: lb,
+      title: 'Laughing Buddha',
+      author: 'author',
+     },{
+      img:gm,
+      title: 'Garam Masala',
+      author: 'author',
+     }
+    ]
+
+function SingleLineGridList() {
+    const classes = useStyles();
+  
+    return (
+      <div className={classes.root}>
+        <GridList className={classes.gridList} cols={2.5}>
+          {tileData.map(tile => (
+            <GridListTile key={tile.img}>
+              <img src={tile.img} alt={tile.title} />
+              <GridListTileBar
+                title={tile.title}
+                classes={{
+                  root: classes.titleBar,
+                  title: classes.title,
+                }}
+                actionIcon={
+                  <IconButton aria-label={`star ${tile.title}`}>
+                    <StarBorderIcon className={classes.title} />
+                  </IconButton>
+                }
+              />
+            </GridListTile>
+          ))}
+        </GridList>
+      </div>
+    );
+  }
 
 const Home = props => {
   return (
-    <div>
+<div>
       <div className="row" align="center">
-        <div
-          className="col header-home"
-          style={{ background: "#FD8C1A", height: "30vh" }}
-        >
-          <Input
-            placeholder="Enter Delivery Address"
-            style={{ width: 600, textAlign: "center" }}
-            prefix={
-              <Icon
-                type="environment"
-                style={{ fontSize: "1.2rem" }}
-                theme="filled"
-              />
-            }
-            suffix={
-              <Tooltip title="Extra information">
-                <Icon
-                  type="right-circle"
-                  style={{ fontSize: "1.2rem" }}
-                  theme="filled"
-                />
-              </Tooltip>
-            }
+    <div
+      className="col header-home"
+      style={{ background: "#FD8C1A", height: "30vh" }}
+    >
+      <Input
+        placeholder="Enter Delivery Address"
+        style={{ width: 600, textAlign: "center" }}
+        prefix={
+          <Icon
+            type="environment"
+            style={{ fontSize: "1.2rem" }}
+            theme="filled"
           />
-        </div>
-      </div>
+        }
+        suffix={
+          <Tooltip title="Extra information">
+            <Icon
+              type="right-circle"
+              style={{ fontSize: "1.2rem" }}
+              theme="filled"
+            />
+          </Tooltip>
+        }
+      />
+    </div>
+    </div>
 
-      <div class="container">
-        <hr />
-
-        <div class="row">
+  <div class="row space" >
           <div class="col-md-4">
             <figure class="card card-product">
               <div class="img-wrap">
-                <img src="https://s9.postimg.org/ojb106167/image.jpg" />
+                <img class="img2" src="https://images.pexels.com/photos/2317408/pexels-photo-2317408.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
               </div>
               <figcaption class="info-wrap">
                 <h4 class="title">Become a Rider</h4>
-                <p class="desc">As a delivery driver, you’ll make reliable money—working anytime,anywhere. 
+                <p class="desc">As a delivery driver, you’ll make reliable money—working anytime, anywhere. 
                                 Become a rider and enjoy the freedom to fit work around your life.
-                                Plus great fees, perks and discounts.</p>
+                                Plus great fees, perks and discounts..</p>
                 
               </figcaption>
               <div class="bottom-wrap">
-                <a href="" class="btn btn-sm btn-primary float-right">
+                <a href="" class="btn btn1 btn-sm btn-primary float-right">
                 Start earning and Ride with Us.
                 </a>
               </div>
@@ -72,193 +139,88 @@ const Home = props => {
           <div class="col-md-4">
             <figure class="card card-product">
               <div class="img-wrap">
-                <img src="https://s9.postimg.org/ojb106167/image.jpg" />{" "}
+                <img class="img1" src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
               </div>
               <figcaption class="info-wrap">
-                <h4 class="title">Good product</h4>
-                <p class="desc">Some small description goes here</p>
-                <div class="rating-wrap">
-                  <div class="label-rating">132 reviews</div>
-                  <div class="label-rating">154 orders </div>
-                </div>
+                <h4 class="title">Become a Partner</h4>
+                <p class="desc">Grow your business and reach new customers by partnering with us. 
+                                We handle delivery, so you can focus on the food, the produce and service.</p>
+              
               </figcaption>
               <div class="bottom-wrap">
-                <a href="" class="btn btn-sm btn-primary float-right">
+                <a href="" class="btn btn2 btn-sm btn-primary float-right">
                 SignUp your Store and Partner with Us.
                 </a>
-                <div class="price-wrap h5">
-                  <span class="price-new">$1280</span>{" "}
-                  <del class="price-old">$1980</del>
-                </div>
               </div>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="card card-product">
               <div class="img-wrap">
-                <img src="https://s9.postimg.org/4ooze1tof/image.jpg" />
+                <img variant="top" src={Logo} />
               </div>
               <figcaption class="info-wrap">
-                <h4 class="title">Product name goes here</h4>
-                <p class="desc">Some small description goes here</p>
-                <div class="rating-wrap">
-                  <div class="label-rating">132 reviews</div>
-                  <div class="label-rating">154 orders </div>
-                </div>
+                <h4 class="title">Try the App.</h4>
+                <p class="desc">Get the best Sababa experience with live order tracking.</p>
               </figcaption>
               <div class="bottom-wrap">
-                <a href="" class="btn btn-sm btn-primary float-right">
-                Try the App.
+                <a href="" class="btn btn3 btn-sm btn-primary float-right">
+                Get the App.
                 </a>
-                <div class="price-wrap h5">
-                  <span class="price-new">$1280</span>{" "}
-                  <del class="price-old">$1980</del>
-                </div>
               </div>
             </figure>
           </div>
+          {/* <Card className="bg-dark text-white">
+  <Card.Img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title>Every Flavour Welcome</Card.Title>
+    <Card.Text>
+    From your neighbourhood spot to the burger and fries you crave, choose from  
+          local and national favourites across the Area.
+    </Card.Text>
+  </Card.ImgOverlay>
+</Card>
+<Card className="bg-dark text-white">
+  <Card.Img src="https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title>You’ve got stuff to do? We’ve got options.</Card.Title>
+    <Card.Text>
+    From your favourite vendors, corner stores, farmers market, known Outlets and Supermarkets. 
+    Get it delivered right to your door.  
+    </Card.Text>
+  </Card.ImgOverlay>
+</Card>    */}
+
+<div className='main-div'>
+  <div className='text-content'>
+    <h1>Every Flavour Welcome</h1>
+    <p>From your neighbourhood spot to the burger and fries you crave, choose from  local and national favourites across the Area.
+    <br/>
+    <button className="btn btn-danger" type="button">Order Now</button>
+</p>
+  </div>
+  <div>
+  <img src='https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image' alt=''/>
+  </div>
+  <div className='text-content2'>
+    <h1>You’ve got stuff to do? We’ve got options.</h1>
+    <p>From your favourite vendors, corner stores, farmers market, known Outlets and Supermarkets. Get it delivered right to your door.  
+    <br/>
+    <button className="btn btn-danger" type="button">Order Now</button>
+</p>
+  </div>
+  <div>
+  <img src='https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image' alt=''/>
+  </div>
+</div>
         </div>
-      </div>
-      
-    <div className="section-two-container">
-      <Card className="advert-card" align="center">
-        <CardImg
-          top
-          width="100%"
-          src="/src/images/tilapia 1.jpeg"
-          alt="Card image cap"
-        />
+        
+        <SingleLineGridList/>
+        
+        <Footer/>
+        
+        </div>
 
-        <i className="fas-fa-route"></i>
-        <CardBody>
-          <CardTitle>Local Foods</CardTitle>
-          <CardSubtitle>
-            Enjoy great cuisine and meals prepaired by our local Kisumu women
-          </CardSubtitle>
-          <CardText></CardText>
-          <Button>
-            <h4>Explore</h4>
-          </Button>
-        </CardBody>
-      </Card>
-      <Card className="advert-card" align="center">
-        <CardImg
-          top
-          width="100%"
-          src="/src/images/culture"
-          alt="Card image cap"
-        />
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
-          </CardText>
-          <Button>
-            <h4>
-              Explore <i className="fas-fa-arrow"></i>
-            </h4>
-          </Button>
-        </CardBody>
-      </Card>
-      <Card className="advert-card" align="center">
-        <CardImg
-          top
-          width="100%"
-          src="/src/images/lake basin4.jpeg"
-          alt="Card image cap"
-        />
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
-          </CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      <Card className="advert-card" align="center">
-        <CardImg
-          top
-          width="100%"
-          src="/assets/318x180.svg"
-          alt="Card image cap"
-        />
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
-          </CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-    </div>
-  );
-};
-
-
-      {/* <CardDeck className="continer">
-          <Card style={{width:"9rem"}}>
-            <Card.Img
-              variant="top"
-              src="https://images.pexels.com/photos/2317408/pexels-photo-2317408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            />
-            <Card.Body>
-              <Card.Title>Become a Rider</Card.Title>
-              <Card.Text>
-                As a delivery driver, you'll make reliable money—working
-                anytime, anywhere. Become a rider and enjoy the freedom to fit
-                work around your life. Plus great fees, perks and discounts.
-              </Card.Text>
-            </Card.Body>
-
-            <button>
-              <small className="text-muted">
-                Start earning and Ride with Us.
-              </small>
-            </button>
-          </Card>
-          <Card>
-            <Card.Img
-              variant="top"
-              src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            />
-            <Card.Body>
-              <Card.Title>Become a Partner</Card.Title>
-              <Card.Text>
-                Grow your business and reach new customers by partnering with
-                us. We handle delivery, so you can focus on the food, the
-                produce and service.
-              </Card.Text>
-            </Card.Body>
-
-            <button>
-              <small className="text-muted">
-                Sign Up your Store and Partner with Us
-              </small>
-            </button>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={Logo} />
-            <Card.Body>
-              <Card.Title>Try the App</Card.Title>
-              <Card.Text>
-                Get the best Sababa experience with live order tracking.
-              </Card.Text>
-            </Card.Body>
-
-            <button>
-              <small className="text-muted">Get the App</small>
-            </button>
-          </Card>
-        </CardDeck> */}
-      {/* </div> */}
-      <Footer />
-    </div>
   );
 };
 

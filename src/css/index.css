@@ -176,3 +176,63 @@ input.error {
   padding: 1.3rem;
   font-weight: bolder;
 }
+.img1{
+  height:40vh;
+  width:100%;
+}
+.img2{
+  height:38vh;
+  width:100%;
+}
+.img3{
+  height:18vh;
+  width:200%;
+}
+.space{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn{
+  border-radius: 20px!important;
+}
+.btn1{
+  color: rgb(255, 255, 255)!important;
+background:#092B4D!important;
+}
+.btn2{
+  color: rgb(255, 255, 255)!important;
+background: #B53B0E!important;
+}
+.btn3{
+  color: rgb(255, 255, 255)!important;
+background: rgb(0, 0, 0)!important;
+}
+.main-div{
+  display: grid;
+  grid-template-columns: 1fr 1r 1fr ;
+  grid-gap: 1rem;
+  margin:1.5rem;
+  align-items: center;
+
+}
+.main-div img {
+  width: 100%;
+}
+.text-content{
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  text-align: center;
+
+}
+.text-content2{
+  grid-row: 2;
+  grid-column: 1;
+  display: block;
+  text-align: center;
+
+}
+.text-content2 p, .text-content p{
+  width: 70%;
+  margin-left: 15%;
+}

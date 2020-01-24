@@ -1,0 +1,135 @@
+[
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Straight",
+        "color":[ "black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density": ["150", "180", "200", "230" ],
+        "origin":"Human hair",
+        "price": "100",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://cdn.mscocohair.com/media/catalog/product/cache/image/600x600/e9c3970ab036de70892d86c6d221abfe/s/t/straight_bob_wig_1.jpg"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Body Wave",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "100",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://cdn.shopify.com/s/files/1/1595/0131/products/brazilian-body-wave-hair-buyer-show.jpg?v=1505463381"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Loose Wave",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "http://cdn.shopify.com/s/files/1/1814/4161/products/vrbest_brazilian_virgin_hair_loose_wave_4_bundles_1200x1200.jpg?v=1524472353"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Deep Wave",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " https://m.juliahair.com/media/catalog/product/cache/6/image/700x700/9df78eab33525d08d6e5fb8d27136e95/d/e/deep_wave_hair_frontal.jpg"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Jerry Curl",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://contestimg.wish.com/api/webimage/58cb9cb0ca0064532d6afebd-large.jpg?cache_buster=5e2ff733a553c5f1575a46ede3dc96a1 "
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Kinky Curly",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://www.evanhair.com/wp-content/uploads/2019/06/Evan-hair-kinky-curly-wigs-2.jpg "
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Water Wave",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "1200",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://www.asteriahair.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/w/a/water_wave_13x6_wigs.jpg "
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Natural Wave",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " https://m.juliahair.com/media/catalog/product/cache/6/image/700x700/9df78eab33525d08d6e5fb8d27136e95/b/r/brazilian_natural_wave_hair.jpg"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Fumi",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " https://i.pinimg.com/originals/75/2e/6f/752e6fb4b583c86c2b9bf636633f3d78.jpg"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Kinky Straight",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " https://www.asteriahair.com/media/catalog/product/cache/1/image/450x450/9df78eab33525d08d6e5fb8d27136e95/a/s/xasteria-hair-wig-kinky-straight-wig_.jpg.pagespeed.ic.Y0UVvQBL69.jpg"
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Yaki",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "http://blog.classiclacewigs.net/wp-content/uploads/2017/03/L0DRMKBKEKA3WRXR1I.jpg "
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Bob",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://www.sensationnel.com/wp-content/uploads/Empire_WigSAP_S_Jean_main-600x800.jpg"
+    }
+
+]
