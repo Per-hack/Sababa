@@ -170,26 +170,8 @@ const Home = props => {
               </div>
             </figure>
           </div>
-          {/* <Card className="bg-dark text-white">
-  <Card.Img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image" />
-  <Card.ImgOverlay>
-    <Card.Title>Every Flavour Welcome</Card.Title>
-    <Card.Text>
-    From your neighbourhood spot to the burger and fries you crave, choose from  
-          local and national favourites across the Area.
-    </Card.Text>
-  </Card.ImgOverlay>
-</Card>
-<Card className="bg-dark text-white">
-  <Card.Img src="https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image" />
-  <Card.ImgOverlay>
-    <Card.Title>You’ve got stuff to do? We’ve got options.</Card.Title>
-    <Card.Text>
-    From your favourite vendors, corner stores, farmers market, known Outlets and Supermarkets. 
-    Get it delivered right to your door.  
-    </Card.Text>
-  </Card.ImgOverlay>
-</Card>    */}
+
+
 
 <div className='main-div'>
   <div className='text-content'>
